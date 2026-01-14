@@ -1,35 +1,44 @@
-
 <!DOCTYPE html>
 <html lang="ms">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buku Log Digital KRS</title>
+    <title>Buku Log Digital Sukan</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
             scroll-behavior: smooth;
         }
+
         @media print {
             @page {
                 margin: 0;
                 size: A4;
             }
+
             body {
                 background: white !important;
                 -webkit-print-color-adjust: exact !important;
                 print-color-adjust: exact !important;
             }
-            .print-hidden, header, aside, .floating-actions {
+
+            .print-hidden,
+            header,
+            aside,
+            .floating-actions {
                 display: none !important;
             }
+
             .print-area {
                 margin: 0 !important;
                 padding: 0 !important;
                 width: 100% !important;
             }
+
             .a4-page {
                 box-shadow: none !important;
                 border: none !important;
@@ -39,6 +48,7 @@
                 page-break-after: always !important;
             }
         }
+
         /* Hide scrollbar for cleaner look during capture */
         .hide-scrollbar::-webkit-scrollbar {
             display: none;
@@ -46,7 +56,7 @@
     </style>
 
 
-<script type="importmap">
+    <script type="importmap">
 {
   "imports": {
     "react/": "https://esm.sh/react@^19.2.3/",
@@ -58,7 +68,9 @@
 </script>
   <script type="module" crossorigin src="/buku-log-digital-sukan/assets/index-BcShztnA.js"></script>
 </head>
+
 <body class="bg-slate-50 text-slate-900">
     <div id="root"></div>
 </body>
+
 </html>
