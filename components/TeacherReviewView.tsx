@@ -15,7 +15,7 @@ interface TeacherReviewViewProps {
 // Utility for formatting
 const formatDateStr = (str: string) => (!str ? "" : str.split('T')[0]);
 
-const KRS_AUDIO_URL = "https://raw.githubusercontent.com/g-59129199-Firdaus/projek-sekolah/3d870f12a20a47152ce4e331d41794212e8eeca1/Lagu%20Kadet%20Remaja%20Sekolah%20%5Blirik%5D.mp3";
+
 
 export const TeacherReviewView: React.FC<TeacherReviewViewProps> = ({ studentEmail, onBack, teacherName }) => {
     const [loading, setLoading] = useState(true);
@@ -284,9 +284,6 @@ export const TeacherReviewView: React.FC<TeacherReviewViewProps> = ({ studentEma
                     <div className="bg-slate-50 p-4 italic border border-slate-200">
                         <span className="block font-bold mb-2">Lagu Unit</span>
                         {data.customSong || STATIC_CONTENT.lagu}
-                        <div className="mt-4 print:hidden">
-                            <audio controls className="w-full h-8"><source src={KRS_AUDIO_URL} type="audio/mpeg" /></audio>
-                        </div>
                     </div>
                     <div className="bg-slate-50 p-4 font-semibold border border-slate-200">
                         <span className="block font-bold mb-2">Ikrar</span>
